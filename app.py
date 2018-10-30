@@ -11,7 +11,7 @@ from Bio.SeqUtils import ProtParam as pp
 from Bio.SeqUtils import seq3
 from plotly import tools
 
-app = dash.Dash(_name_)
+app = dash.Dash()
 server = app.server
 
 ##### 1. DATA #####
@@ -352,7 +352,6 @@ app.layout = html.Div([
 
 
 external_css = [
-	https://raw.githubusercontent.com/lmalet/Dash_app/master/assets/styles.css,
     # "https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css",  # Normalize the CSS
     # "https://fonts.googleapis.com/css?family=Open+Sans|Roboto"  # Fonts
     # "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css",
