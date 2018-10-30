@@ -11,7 +11,7 @@ from Bio.SeqUtils import ProtParam as pp
 from Bio.SeqUtils import seq3
 from plotly import tools
 
-app = dash.Dash(_name_)
+app = dash.Dash(__name__)
 server = app.server
 
 ##### 1. DATA #####
